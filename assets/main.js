@@ -27,6 +27,16 @@ $(document).ready(function(){
             method: "GET"
           }).then(function(response) {
               console.log(response.response.docs);  //Returns an array of articles.  
+              if(numberOfRecords !== ""){
+                for(var i = 0; i < numberOfRecords; i++){
+                    console.log(response.response.docs[i]);
+                }
+              } else{
+                for(var i = 0; i < 5; i++){
+                    console.log(response.response.docs[i]);
+                }
+              }
+
           })
     })
 })
