@@ -12,6 +12,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -21,7 +22,25 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <h1>Hello World!</h1>
+        <form>
+            <div class="form-group">
+              <label for="searchTerm">Search Term</label>
+              <input type="text" class="form-control" id="searchTerm" placeholder="Enter search term">
+            </div>
+            <div class="form-group">
+              <label for="numberOfRecords">Number of Records to Retrieve</label>
+              <input type="text" class="form-control" id="numberOfRecords" placeholder="1, 2, 3, etc.">
+            </div>
+            <div class="form-group">
+                <label for="startYear">Start Year</label>
+                <input type="text" class="form-control" id="startYear" placeholder="Pick a year.">
+              </div>
+              <div class="form-group">
+                <label for="endYear">End Year</label>
+                <input type="text" class="form-control" id="endYear" placeholder="Pick a year.">
+              </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+          </form>
     <script src="assets/main.js" async defer></script>
 </body>
 
